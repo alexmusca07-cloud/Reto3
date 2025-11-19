@@ -1,10 +1,17 @@
 package Reto3;
 
+import Reto3.Funciones1;
+import Reto3.Funciones2;
+import Reto3.Funciones3;
+import java.util.Scanner;
+
 public class Reto3 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
 
+		Funciones1.nombres(sc);
+		
 	}
 
 }
