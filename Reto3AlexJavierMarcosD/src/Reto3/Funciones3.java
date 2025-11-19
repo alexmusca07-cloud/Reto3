@@ -1,6 +1,23 @@
 package Reto3;
 
 public class Funciones3 {
+	
+	public static String numerosEnFrase(String frase) {
+		String numeros = "";
+		int contador = 0;
+		for (int a = 0; a < frase.length(); a++) {
+			char c = frase.charAt(a);
+			if(Character.isDigit(c)) {
+				contador++;
+				if(contador == 1) {
+					numeros += c;
+				} else {
+					numeros += ("," + c);
+				}
+			}
+		}
+		return numeros;
+	}
 
 	public static String cifradoSimple(String frase) {
 		frase = frase.toLowerCase();
