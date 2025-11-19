@@ -40,7 +40,7 @@ public class Funciones3 {
 	}
 
 	public static String palabraCorta(String frase) {
-		String pCorta = "";
+		String pCorta = "jghfgdkhgffcjkhfcdkhtfdkuhtgfkhutf";
 		String contarLetras = "";
 		for (int a = 0; a < frase.length(); a++) {
 			char c = frase.charAt(a);
