@@ -10,8 +10,8 @@ public class Reto3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		Funciones1.nombres(sc);
-		
+		/*Funciones1.nombres(sc);*/
+		Funciones2.Funciones2(sc);
 	}
 
 }
