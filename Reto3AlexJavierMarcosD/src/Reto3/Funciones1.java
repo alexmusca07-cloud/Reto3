@@ -8,6 +8,8 @@ public class Funciones1 {
 		String nombre;
 		String pcorta = "DSUFUOGDFISDGVI";
 		String palfabetica = "z";
+		String p3;
+		String n;
 		do {
 			System.out.println("Dime un nombre");
 			nombre = sc.nextLine();
@@ -21,16 +23,22 @@ public class Funciones1 {
 			if (nombre.compareTo(palfabetica) < 0) {
 				palfabetica = nombre;
 			}
-			System.out.println(nombreFormateado);
+			do {
+				try {
+					p3=nombre.substring(0, 3);
+					break;
+				} catch (Exception e) {
+				}
+			} while (true);			
+			int nletras = nombre.length();
+			System.out.println(nombreFormateado);char ultimaLetra = nombre.charAt(nombre.length() - 1);
 			System.out.println("La alfabeticamente primera es " +palfabetica);
-
+			System.out.println(p3 +ultimaLetra +nletras);
 			if (pcorta.isBlank() == true) {
 				continue;
 			}
 			System.out.println("El nombre mas corto es " +pcorta);
 			
-		} while (nombre != "");
-		System.out.println("Fin");
-	
+		} while (nombre != "");	
 	}
 }
